@@ -168,6 +168,106 @@ export default {
             </div>
         </div>
     </div>
+
+    <!-- OurProducts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="text-center pt-3 ">
+                    Our P<span>ro</span>ducts
+                </h2>
+            </div>
+            <div class="col-12 mb-3">
+                <nav>
+                    <ul>
+                        <li>
+                            Featured
+                        </li>
+                        <li>
+                            New Arrival
+                        </li>
+                        <li>
+                            Best Seller
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/04.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/09.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/03.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/11.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="img-most position-relative ">
+                    <img src="../assets/cms-banner-03.jpg" alt="">
+                    <div class="img-most-info">
+                        <h5>
+                            20% Discount
+                        </h5>
+                        <h6>
+                            Dragon's Dogma Video Game
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="img-most position-relative ">
+                    <img src="../assets/cms-banner-03.jpg" alt="">
+                    <div class="img-most-info">
+                        <h5>
+                            30% Discount
+                        </h5>
+                        <h6>
+                            Word Of Tanks New Game
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -270,6 +370,18 @@ export default {
                 color: #F9AA01;
 
             }
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        li{
+            padding: 20px 40px;
+            border: 1px solid grey;
         }
     }
 }
