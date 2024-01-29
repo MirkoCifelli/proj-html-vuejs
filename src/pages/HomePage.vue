@@ -118,6 +118,56 @@ export default {
             </div>
         </div>
     </div>
+
+    <!-- special category -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="text-center pt-3 ">
+                    Special<span> Cat</span>egory
+                </h2>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../assets/category-image-02-446x550_t.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        <div class="shop-now">
+                            <a href="#">Shop now</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../assets/category-image-01-446x550_t.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Bayonetta
+                        </div>
+                        <div class="shop-now">
+                            <a href="#">Shop now</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="../assets/category-image-03-446x550_t.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Dark Souls
+                        </div>
+                        <div class="shop-now">
+                            <a href="#">Shop now</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -184,8 +234,43 @@ export default {
         font-weight: bold;
         margin-bottom: 20px;
     }
+    h2{
+        span{
+            border-bottom: 2px solid #F9AA01;
+            font-size: 30px;
+            padding-bottom: 10px;
+        
+        }
+    }
     span{
         font-size: 12px;
+    }
+    .card{
+        position: relative;
+        border: 0;
+        .special-category-info{
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+            background-color: #1D1427;
+            opacity: 0.5;
+            padding: 20px;
+            &:hover{
+                opacity: 0.95;
+            }
+            .card-div{
+                color: #ffffff;
+                font-weight: bold;
+                
+            }
+            .shop-now
+                a{
+                color: #F9AA01;
+
+            }
+        }
     }
 }
 </style>
