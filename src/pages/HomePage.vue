@@ -254,7 +254,7 @@ export default {
             </div>
             <div class="col-6">
                 <div class="img-most position-relative ">
-                    <img src="../assets/cms-banner-03.jpg" alt="">
+                    <img src="../assets/cms-banner-04.jpg" alt="">
                     <div class="img-most-info">
                         <h5>
                             30% Discount
