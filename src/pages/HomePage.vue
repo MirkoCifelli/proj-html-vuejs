@@ -103,7 +103,7 @@ export default {
         getImagePath: function(imgPath){
                 return new URL(imgPath, import.meta.url).href;
             },
-            startCountdown() {
+        startCountdown() {
       setInterval(() => {
         const now = new Date().getTime();
         const distance = this.endDate - now;
@@ -457,11 +457,11 @@ export default {
                                     <div class="new-game-img position-relative">
                                         <img :src="getImagePath('../assets/'+ blog.img)" class="card-img-top" alt="...">
                                     </div>
-                                    <div class="new-game-img-hover position-absolute">
+                                    <div class="new-game-img-hover position-absolute fs-3">
                                         <i class="fa-solid fa-plus text-white"></i> <i class="fa-solid fa-share-nodes text-white ms-3"></i>
                                     </div>
                                     <div class="card-body cardinfoblog">
-                                        <div class="co-orange d-flex">
+                                        <div class="co-orange d-flex ">
                                             <i class="fa-regular fa-calendar-days">{{blog.date}}</i><i class="fa-solid fa-comment ms-2">{{blog.comment}}</i>
                                         </div>
                                         <p class="card-text">{{blog.text}}</p>
