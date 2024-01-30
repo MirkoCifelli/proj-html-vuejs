@@ -65,6 +65,26 @@ export default {
                     name:'Word Of Tanks New Game',
                     tag:'30% Discount'
                 }     
+            ],
+            newGameBlogImg:[
+                {
+                    img:'/Nisi-ut-aliquid-ex-ea-com.jpg',
+                    text:'Lorem ipsum 10 aggiugni qualcosa anche tu',
+                    date:" Jan 18, 2001",
+                    comment:' 0 comment'
+                },
+                {
+                    img:'/Architecto-beatae-vitae-dicta.jpg',
+                    text:'Lorem ipsum 10 aggiugni qualcosa anche tu a',
+                    date:" May 30, 2021",
+                    comment:' 0 comment'
+                },
+                {
+                    img:'/At-vero-eos-et-accusamus.jpg',
+                    text:'Lorem ipsum 10 aggiugni qualcosa anche tu b',
+                    date:" April 13, 2021",
+                    comment:' 0 comment'
+                }
             ]
             
         };
@@ -395,7 +415,7 @@ export default {
             </div>
         </div>
     </div>
-
+    <!-- New game blogs -->
     <div class="container">
         <div class="row">
             <div class="col-12 p-4">
@@ -403,9 +423,53 @@ export default {
                     New G<span>ame</span> Blogs
                 </h2>
             </div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-12">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper d-flex justify-content-evenly">
+                                <div class="card" style="width: 18rem;" v-for="(blog,i) in newGameBlogImg" :key="i">
+                                    <img :src="getImagePath('../assets/'+ blog.img)" class="card-img-top" alt="...">
+                                    <div class="card-body cardinfoblog">
+                                        <div class="co-orange d-flex">
+                                            <i class="fa-regular fa-calendar-days">{{blog.date}}</i><i class="fa-solid fa-comment ms-2">{{blog.comment}}</i>
+                                        </div>
+                                        <p class="card-text">{{blog.text}}</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-wrapper">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body ">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
 
             <hr>
             <div class="contenitore-5 d-flex justify-content-evenly mb-5">
@@ -607,4 +671,16 @@ export default {
         }
     }
 }
+ 
+.cardinfoblog{
+    background-color: #1D1427;
+    color: white
+    
+}
+.co-orange{
+    color: #F9AA01;
+}
+
+    
+
 </style>
