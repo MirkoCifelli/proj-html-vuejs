@@ -354,6 +354,32 @@ export default {
         </div>
     </div>
 
+    <!-- Staff -->
+    <div class="container-fluid pb-3 ">
+        <div class="img-container-staff">
+            <!-- <img src="../assets/parallax.jpg" alt=""> -->
+            <div class="container d-flex flex-wrap justify-content-center p-5">
+                <div class="img-staff position-relative">
+                    <img src="../assets/t5-1-100x100_left.jpg" alt="">
+                </div>
+                <div class="absolute-quote">
+                    <img src="../assets/quote.png" alt="">
+                </div>
+                <div class="staff-info d-flex flex-wrap align-items-center justify-content-center">
+                    <h4 class=" m-1">Lules Charls</h4><span>(Web designer)</span>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore harum iste ratione fuga adipisci repudiandae aut aperiam quae dolor explicabo omnis, recusandae vel totam quasi? Nemo rem laborum aperiam unde!
+                    </p>
+                </div>
+                <div class=" text-center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -477,6 +503,59 @@ export default {
         li{
             padding: 10px 40px;
             border: 1px solid rgb(66, 66, 66);
+        }
+    }
+}
+.container-fluid{
+    .img-container-staff{
+        width: 100%;
+        height: 300px;
+        background-image: url(../assets/parallax.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        .container{
+            .img-staff{
+                width: 100px;
+                height: 100px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 1px solid #F9AA01;
+                }
+            }
+            .absolute-quote{
+                position: absolute;
+                left: 46%;
+                background-color: #F9AA01;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                line-height: 1;
+               
+            }
+            .staff-info{
+                margin: 10px 20px;
+                h4{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 20px;
+                    color: #F9AA01;
+                    margin-left: 4px;
+                }
+            }
+            .dot {
+                height: 10px;
+                width: 10px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                margin-left: 5px;
+                &:first-of-type{
+                    background-color: #F9AA01;
+                }
+            }
         }
     }
 }
