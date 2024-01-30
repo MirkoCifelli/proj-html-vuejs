@@ -3,8 +3,76 @@
 export default {
     data() {
         return {
-
+            imgBrand:[
+                {
+                    img : '../assets/brand-01.png'
+                    
+                },
+                {
+                    img : '../assets/brand-02.png'
+                    
+                },
+                {
+                    img : '../assets/brand-03.png'
+                    
+                },
+                {
+                    img : '../assets/brand-04.png'
+                    
+                },
+                {
+                    img : '../assets/brand-05.png'
+                    
+                }
+            ],
+            categoryImg:[
+                {
+                    img : 'category-image-02-446x550_t.jpg',
+                    name:'Batman',
+                    a:'Shop now'
+                },
+                {
+                    img : 'category-image-01-446x550_t.jpg',
+                    name:'Bayonetta',
+                    a:'Shop now'
+                },
+                {
+                    img : 'category-image-03-446x550_t.jpg',
+                    name:'Dark Soul',
+                    a:'Shop now'
+                }
+            ],
+            mostLatestImg:[
+                {
+                    img : 'cms-banner-01.jpg',
+                    name:'The Battelfield Naval Strike',
+                    tag:'Most popular'
+                },
+                {
+                    img : 'cms-banner-02.jpg',
+                    name:'Assasin s Creed Unity Game',
+                    tag:'Latest Game'
+                }     
+            ],
+            discountImg:[
+                {
+                    img : 'cms-banner-03.jpg',
+                    name:'Dragon s Dogma Video Game',
+                    tag:'20% Discount'
+                },
+                {
+                    img : 'cms-banner-04.jpg',
+                    name:'Word Of Tanks New Game',
+                    tag:'30% Discount'
+                }     
+            ]
+            
         };
+    },
+    methods:{
+        getImagePath: function(imgPath){
+                return new URL(imgPath, import.meta.url).href;
+            },
     }
 }
 </script>
@@ -98,29 +166,15 @@ export default {
                    
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6" v-for="(cms,i) in mostLatestImg" :key="i">
                 <div class="img-most position-relative ">
-                    <img src="../assets/cms-banner-01.jpg" alt="">
+                    <img :src="getImagePath('../assets/'+ cms.img)" alt="">
                     <div class="img-most-info">
                         <h5>
-                            Most popular
+                            {{cms.tag}}
                         </h5>
                         <h6>
-                            The Battelfield Naval Strike
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="img-most position-relative">
-                    <img src="../assets/cms-banner-02.jpg" alt="">
-                    <div class="img-most-info ">
-                        <h5>
-                            Latest Game
-                        </h5>
-                        <h6>
-                            Assasin's Creed 
-                            Unity Game
+                            {{cms.name}}
                         </h6>
                     </div>
                 </div>
@@ -136,45 +190,20 @@ export default {
                     Special<span> Cat</span>egory
                 </h2>
             </div>
-            <div class="col-4">
+            <div class="col-4" v-for="(category,i) in categoryImg" :key="i">
                 <div class="card">
-                    <img src="../assets/category-image-02-446x550_t.jpg" alt="">
+                    <img :src="getImagePath('../assets/'+ category.img)" alt="">
                     <div class="special-category-info ">
                         <div class="card-div">
-                            Batman
+                            {{ category.name}}
                         </div>
                         <div class="shop-now">
-                            <a href="#">Shop now</a>
+                            <a href="#">{{ category.a }}</a>
                          </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="../assets/category-image-01-446x550_t.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Bayonetta
-                        </div>
-                        <div class="shop-now">
-                            <a href="#">Shop now</a>
-                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img src="../assets/category-image-03-446x550_t.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Dark Souls
-                        </div>
-                        <div class="shop-now">
-                            <a href="#">Shop now</a>
-                         </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -248,28 +277,15 @@ export default {
         </div>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-6" v-for="(discount,i) in discountImg" :key="i">
                 <div class="img-most position-relative ">
-                    <img src="../assets/cms-banner-03.jpg" alt="">
+                    <img :src="getImagePath('../assets/'+ discount.img)" alt="">
                     <div class="img-most-info">
                         <h5>
-                            20% Discount
+                            {{discount.tag}}
                         </h5>
                         <h6>
-                            Dragon's Dogma Video Game
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="img-most position-relative ">
-                    <img src="../assets/cms-banner-04.jpg" alt="">
-                    <div class="img-most-info">
-                        <h5>
-                            30% Discount
-                        </h5>
-                        <h6>
-                            Word Of Tanks New Game
+                            {{discount.name}}
                         </h6>
                     </div>
                 </div>
@@ -376,6 +392,28 @@ export default {
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 p-4">
+                <h2 class="text-center pt-3 ">
+                    New G<span>ame</span> Blogs
+                </h2>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+
+            <hr>
+            <div class="contenitore-5 d-flex justify-content-evenly mb-5">
+                
+                <div class="contenitore-brand" v-for="(brand,i) in imgBrand" :key="i">
+                    <img :src="getImagePath('../assets/'+ brand.img)" alt="">
+                </div>
+
             </div>
         </div>
     </div>
@@ -556,6 +594,16 @@ export default {
                     background-color: #F9AA01;
                 }
             }
+        }
+    }
+}
+.container-5{
+    .contenitore-brand{
+        width: 50px;
+        height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
 }
