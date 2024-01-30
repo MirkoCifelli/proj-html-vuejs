@@ -33,9 +33,7 @@ export default {
                     <div class="carousel-item">
                     <img src="../assets/Illo-inventore-veritatis-quasi.jpg" class="d-block w-100 jumbo-img" alt="...">
                     </div>
-                    <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    </div>
+                    
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -54,7 +52,7 @@ export default {
         <div class="row">
             <div class="col-12">
                 <div class=" d-flex justify-content-around  p-5 ">
-                    <div class="d-flex">
+                    <div class="d-flex align-items-center hover-effect">
                         <i class="fa-solid fa-truck fs-1"></i>
                         <div class="ms-3">
                             <h6>Free Delivery</h6>
@@ -62,7 +60,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class=" d-flex ">
+                    <div class=" d-flex align-items-center hover-effect">
                         <i class="fa-solid fa-percent fs-1 "></i>
                         <div class="ms-3">
                             <h6>Money Return</h6>
@@ -70,7 +68,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class=" d-flex ">
+                    <div class=" d-flex align-items-center hover-effect">
                         <i class="fa-solid fa-sack-dollar fs-1 "></i>
                         <div class="ms-3">
                             <h6>Member Discount</h6>
@@ -78,7 +76,7 @@ export default {
                         </div>
                     </div>
 
-                    <div class=" d-flex ">
+                    <div class=" d-flex align-items-center hover-effect">
                         <i class="fa-solid fa-hand-holding-dollar fs-1 "></i>
                         <div class="ms-3">
                             <h6>Return Policy</h6>
@@ -171,7 +169,7 @@ export default {
 
     <!-- OurProducts -->
     <div class="container">
-        <div class="row">
+        <div class="row pb-4 ">
             <div class="col-12 mb-4">
                 <h2 class="text-center pt-3 ">
                     Our P<span>ro</span>ducts
@@ -268,6 +266,83 @@ export default {
         </div>
 
     </div>
+
+    <!-- Deal Of the Day -->
+    <div class="container">
+        <div class="row  pb-4 ">
+            <div class="col-12 p-4">
+                <h2 class="text-center pt-3 ">
+                    Deal Of<span> Th</span>e Day
+                </h2>
+            </div>
+
+            <div class="col-12 mb-3">
+                <nav>
+                    <ul>
+                        <li>
+                            Day
+                        </li>
+                        <li>
+                            hours
+                        </li>
+                        <li>
+                            min
+                        </li>
+                        <li>
+                            sec
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/04.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/04.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/04.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="../assets/04.jpg" alt="">
+                    <div class="special-category-info ">
+                        <div class="card-div">
+                            Batman
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -310,6 +385,11 @@ export default {
 }
 .container{
     color: #ffffff;
+    .hover-effect{
+        &:hover{
+            color: #F9AA01;
+        }
+    }
     img{
         width: 100%;
         height: 100%;
@@ -380,8 +460,8 @@ export default {
             justify-content: center;
         }
         li{
-            padding: 20px 40px;
-            border: 1px solid grey;
+            padding: 10px 40px;
+            border: 1px solid rgb(66, 66, 66);
         }
     }
 }
