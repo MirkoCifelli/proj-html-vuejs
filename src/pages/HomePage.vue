@@ -428,8 +428,13 @@ export default {
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="card-wrapper d-flex justify-content-evenly">
-                                <div class="card" style="width: 18rem;" v-for="(blog,i) in newGameBlogImg" :key="i">
-                                    <img :src="getImagePath('../assets/'+ blog.img)" class="card-img-top" alt="...">
+                                <div class="card over-card" style="width: 18rem;" v-for="(blog,i) in newGameBlogImg" :key="i">
+                                    <div class="new-game-img position-relative">
+                                        <img :src="getImagePath('../assets/'+ blog.img)" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="new-game-img-hover position-absolute">
+                                        <i class="fa-solid fa-plus text-white"></i> <i class="fa-solid fa-share-nodes text-white ms-3"></i>
+                                    </div>
                                     <div class="card-body cardinfoblog">
                                         <div class="co-orange d-flex">
                                             <i class="fa-regular fa-calendar-days">{{blog.date}}</i><i class="fa-solid fa-comment ms-2">{{blog.comment}}</i>
@@ -439,10 +444,10 @@ export default {
                                 </div> 
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                             <div class="card-wrapper">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="..." class="card-img-top" alt="...">
+                                <div class="card" style="width: 18rem;" v-for="(blog,i) in newGameBlogImg" :key="i">
+                                    <img :src="getImagePath('../assets/'+ blog.img)" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
@@ -458,7 +463,7 @@ export default {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -672,14 +677,24 @@ export default {
     }
 }
  
-.cardinfoblog{
+.col-12{
+    .cardinfoblog{
     background-color: #1D1427;
     color: white
     
-}
-.co-orange{
+    }
+    .co-orange{
     color: #F9AA01;
 }
+.new-game-img-hover{
+    left: 40%;
+    top: 25%;
+    opacity: 0;
+    &:hover{
+        opacity:1;
+    }
+}
+}   
 
     
 
