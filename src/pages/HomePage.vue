@@ -30,8 +30,19 @@ export default {
                         </button>
                     </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="../assets/Illo-inventore-veritatis-quasi.jpg" class="d-block w-100 jumbo-img" alt="...">
+                    <div class="carousel-item position-relative">
+                    <img src="https://static.bandainamcoent.eu/high/jump-force/jump-force/00-page-setup/jump-force_game-thumbnail2.jpg" class="d-block w-100 jumbo-img" alt="...">
+                    <div class="info-jumbo position-absolute text-white cordinate-absolute">
+                        <h5>
+                            Upcoming Stock
+                        </h5>
+                        <h2>
+                            New jump-force Goku
+                        </h2>
+                        <button class="button">
+                            Shop now
+                        </button>
+                    </div>
                     </div>
                     
                 </div>
@@ -380,6 +391,10 @@ export default {
         font-size: 14px;
         font-weight: bold;
         margin-top: 40px;
+        &:hover{
+            color: black;
+            background-color: #F9AA01;
+        }
 }
 }
 }
