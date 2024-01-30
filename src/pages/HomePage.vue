@@ -85,15 +85,45 @@ export default {
                     date:" April 13, 2021",
                     comment:' 0 comment'
                 }
-            ]
+            ],
+            countdown: {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0
+            },
+            endDate: new Date().getTime() + (500 * 24 * 60 * 60 * 1000) // 500 days from now
             
         };
+    },
+    mounted() {
+    this.startCountdown();
     },
     methods:{
         getImagePath: function(imgPath){
                 return new URL(imgPath, import.meta.url).href;
             },
+            startCountdown() {
+      setInterval(() => {
+        const now = new Date().getTime();
+        const distance = this.endDate - now;
+
+        this.countdown.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        this.countdown.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        this.countdown.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        this.countdown.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (distance < 0) {
+          clearInterval(this.interval);
+          this.countdown.days = 0;
+          this.countdown.hours = 0;
+          this.countdown.minutes = 0;
+          this.countdown.seconds = 0;
+        }
+      }, 1000);
     }
+  }
+    
 }
 </script>
 
@@ -325,20 +355,15 @@ export default {
 
             <div class="col-12 mb-3">
                 <nav>
-                    <ul>
-                        <li>
-                            Day
-                        </li>
-                        <li>
-                            hours
-                        </li>
-                        <li>
-                            min
-                        </li>
-                        <li>
-                            sec
-                        </li>
-                    </ul>
+                    <ul v-if="countdown.days > 0">
+                        <li>{{ countdown.days }} days</li>
+                        <li>{{ countdown.hours }} hours</li>
+                        <li>{{ countdown.minutes }} minutes</li>
+                        <li>{{ countdown.seconds }} seconds</li>
+                     </ul>
+                    <p v-else>
+                    Countdown finished!
+                    </p>
                 </nav>
             </div>
 
