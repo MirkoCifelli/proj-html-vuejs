@@ -282,11 +282,9 @@ export default {
             </div>
             <div class="col-3">
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/05.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img  class="Sirv image-main" src="../assets/02.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">   
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -310,11 +308,10 @@ export default {
             </div>
             <div class="col-3">
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/09.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img  class="Sirv image-main" src="../assets/09.jpg" alt="">
+                        <img  class="Sirv image-hover" src="../assets/01.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -335,11 +332,10 @@ export default {
             </div>
             <div class="col-3">
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/10.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img class="Sirv image-main" src="../assets/10.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -360,11 +356,10 @@ export default {
             </div>
             <div class="col-3">
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/11.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img class="Sirv image-main" src="../assets/11.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -437,11 +432,10 @@ export default {
                     </div>
                 </div> -->
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/04.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img class="Sirv image-main" src="../assets/04.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -474,11 +468,9 @@ export default {
                     </div>
                 </div> -->
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/02.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img  class="Sirv image-main" src="../assets/02.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">   
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -498,22 +490,14 @@ export default {
                 </div>
             </div>
             <div class="col-3">
-                <!-- <div class="card">
-                    <img src="../assets/04.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
-                        </div>
-                        
-                    </div>
-                </div> -->
+                
 
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/01.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img class="Sirv image-main" src="../assets/01.jpg" alt="">
+                        
+                         <img class="Sirv image-hover" src="../assets/06.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -534,11 +518,10 @@ export default {
             </div>
             <div class="col-3">
                 <div class="product position-relative">
-                    <div class="product-img">
-                        <img src="../assets/05.jpg" alt="">
-                        <div class="opacity-prod">
-                            <img src="../assets/01.jpg"  alt="">
-                        </div>
+                    <div class="product-img position-relative">
+                        <img class="Sirv image-main" src="../assets/05.jpg" alt="">
+                        <img class="Sirv image-hover" src="../assets/07.jpg"  alt="">
+                        
                     </div>
                     <div class="product-info position-absolute bottom-0 start-0">
                         <div class="product-div">
@@ -872,19 +855,21 @@ export default {
     .opacity-prod{
         opacity: 0;
     }
-    .product-img:hover{
-        img{
-            opacity: 0;
-        }
-        &.opacity-prod{
-            opacity: 1;
-        }
+    
+    .product-img img.Sirv.image-hover{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .2s;
+        
     }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    .product-img:hover img.Sirv.image-hover {
+        opacity: 1;
+     }
     .bg-discout{
         background-color: #F9AA01;
         padding: 5px;
