@@ -28,7 +28,7 @@ export default {
 
 <template>
     <div v-if="showScrollButton" class="scroll-btn" @click="scrollToTop">
-        <i class="fa-solid fa-angles-up fs-2"></i>
+        <span><i class="fa-solid fa-angles-up fs-2"></i></span>
   </div>
 </template>
 
@@ -41,9 +41,14 @@ export default {
   background-color: #F9AA01;
   color: black;
   padding: 20px;
-  border-radius: 50%;
+  border-radius: 0%;
+  transform:  rotate(45deg);
   cursor: pointer;
   z-index: 1000;
+    span{
+        display: inline-block;
+        transform: rotate(-45deg);
+     }
 }
 
 .scroll-btn.show {
