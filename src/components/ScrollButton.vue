@@ -37,7 +37,7 @@ export default {
 //   display: none;
   position: fixed;
   bottom: 100px;
-  right: 20px;
+  right: 40px;
   background-color: #F9AA01;
   color: black;
   padding: 20px;

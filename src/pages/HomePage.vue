@@ -658,7 +658,7 @@ export default {
             }
             .absolute-quote{
                 position: absolute;
-                left: 46%;
+                left: 48%;
                 background-color: #F9AA01;
                 height: 20px;
                 width: 20px;
