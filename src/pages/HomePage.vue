@@ -104,7 +104,7 @@ export default {
                 return new URL(imgPath, import.meta.url).href;
             },
         startCountdown() {
-      setInterval(() => {
+        setInterval(() => {
         const now = new Date().getTime();
         const distance = this.endDate - now;
 
@@ -631,9 +631,9 @@ export default {
             </div>
 
             <hr>
-            <div class="contenitore-5 d-flex justify-content-evenly mb-5">
+            <div class="d-flex justify-content-evenly mb-5">
                 
-                <div class="contenitore-brand" v-for="(brand,i) in imgBrand" :key="i">
+                <div class="contenitore-brand mt-5" v-for="(brand,i) in imgBrand" :key="i">
                     <img :src="getImagePath('../assets/'+ brand.img)" alt="">
                 </div>
 
@@ -820,16 +820,16 @@ export default {
         }
     }
 }
-.container-5{
-    .contenitore-brand{
-        width: 50px;
-        height: 50px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
+
+.contenitore-brand{
+     width: 200px;
+     height: 80px;
+     img{
+         width: 100%;
+         height: 100%;
+     }
     }
-}
+
  
 .col-12{
     .cardinfoblog{
