@@ -281,46 +281,105 @@ export default {
                 </nav>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img src="../assets/04.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/05.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
                         </div>
-                        
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Shopping Mahjoung
+                            </div>
+                            <div>
+                                <span class="text-decoration-line-through fs-2">% 30.00</span>  <span class=" color-span fs-2"> $100.00</span>
+                            </div> 
+                        </div>  
+                    </div>
+                    <div class="discount-product fs-4 bg-discout">
+                            -44%
                     </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img src="../assets/09.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/09.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
                         </div>
-                        
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Buddy and Lucky Solitaire
+                            </div>
+                            <div>
+                             <span class=" color-span fs-2"> $83.00 - 90.00 </span>
+                            </div> 
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img src="../assets/03.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/10.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
                         </div>
-                        
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Taushou X Alice Epilogue
+                            </div>
+                            <div>
+                             <span class=" color-span fs-2"> $160.00 </span>
+                            </div> 
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img src="../assets/11.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/11.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
                         </div>
-
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Labyrinths of the World
+                            </div>
+                            <div>
+                             <span class=" color-span fs-2"> $110.00 </span>
+                            </div> 
+                        </div>  
                     </div>
                 </div>
             </div>
