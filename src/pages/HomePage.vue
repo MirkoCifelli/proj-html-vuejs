@@ -368,7 +368,7 @@ export default {
             </div>
 
             <div class="col-3">
-                <div class="card">
+                <!-- <div class="card">
                     <img src="../assets/04.jpg" alt="">
                     <div class="special-category-info ">
                         <div class="card-div">
@@ -376,10 +376,36 @@ export default {
                         </div>
                         
                     </div>
+                </div> -->
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/04.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
+                        </div>
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Shopping Mahjoung
+                            </div>
+                            <div>
+                                <span class="text-decoration-line-through fs-2">% 30.00</span>  <span class=" color-span fs-2"> $50.00</span>
+                            </div> 
+                        </div>  
+                    </div>
+                    <div class="discount-product fs-4 bg-discout">
+                            -44%
+                    </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
+                <!-- <div class="card">
                     <img src="../assets/04.jpg" alt="">
                     <div class="special-category-info ">
                         <div class="card-div">
@@ -387,10 +413,33 @@ export default {
                         </div>
                         
                     </div>
+                </div> -->
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/02.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
+                        </div>
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Shopping Mah
+                            </div>
+                            <div>
+                                 <span class=" color-span fs-2"> $56.00</span>
+                            </div> 
+                        </div>  
+                    </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
+                <!-- <div class="card">
                     <img src="../assets/04.jpg" alt="">
                     <div class="special-category-info ">
                         <div class="card-div">
@@ -398,16 +447,54 @@ export default {
                         </div>
                         
                     </div>
+                </div> -->
+
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/01.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
+                        </div>
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                BangBangShooting
+                            </div>
+                            <div>
+                                 <span class=" color-span fs-2"> $56.00 - $90.00</span>
+                            </div> 
+                        </div>  
+                    </div>
                 </div>
             </div>
             <div class="col-3">
-                <div class="card">
-                    <img src="../assets/04.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
+                <div class="product position-relative">
+                    <div class="product-img">
+                        <img src="../assets/05.jpg" alt="">
+                        <div class="opacity-prod">
+                            <img src="../assets/01.jpg"  alt="">
                         </div>
-                        
+                    </div>
+                    <div class="product-info position-absolute bottom-0 start-0">
+                        <div class="product-div">
+                            <div class="fs-4">
+                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
+                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
+                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="fs-3">
+                                Taishou x Alice Epilogue
+                            </div>
+                            <div>
+                                 <span class=" color-span fs-2">$160.00</span>
+                            </div> 
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -720,7 +807,39 @@ export default {
     }
 }
 }   
+.product{
+    width: 100%;
+    height: 500px;
+    .opacity-prod{
+        opacity: 0;
+    }
+    .product-img:hover{
+        img{
+            opacity: 0;
+        }
+        &.opacity-prod{
+            opacity: 1;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bg-discout{
+        background-color: #F9AA01;
+        padding: 5px;
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+        position: absolute;
+        top: 20px;
+        left: 10px;
 
+    }
+    .color-span{
+        color: #F9AA01;
+    }
+    
+}
     
 
 </style>
