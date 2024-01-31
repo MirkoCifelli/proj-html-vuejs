@@ -5,23 +5,23 @@ export default {
         return {
             imgBrand:[
                 {
-                    img : '../assets/brand-01.png'
+                    img : 'brand-01.png'
                     
                 },
                 {
-                    img : '../assets/brand-02.png'
+                    img : 'brand-02.png'
                     
                 },
                 {
-                    img : '../assets/brand-03.png'
+                    img : 'brand-03.png'
                     
                 },
                 {
-                    img : '../assets/brand-04.png'
+                    img : 'brand-04.png'
                     
                 },
                 {
-                    img : '../assets/brand-05.png'
+                    img : 'brand-05.png'
                     
                 }
             ],
