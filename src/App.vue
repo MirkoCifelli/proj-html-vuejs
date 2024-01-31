@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import axios from 'axios';
+import ScrollButton from './components/ScrollButton.vue';
 
 export default {
     data() {
@@ -13,7 +14,8 @@ export default {
     components: {
         AppHeader,
         AppMain,
-        AppFooter
+        AppFooter,
+        ScrollButton
     },  
     methods: {
 
@@ -31,7 +33,12 @@ export default {
 
     <AppHeader />
 
+    <div id="app">
+    <ScrollButton />
     <AppMain />
+    </div>
+
+    
 
     <AppFooter />
 </template>
