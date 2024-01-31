@@ -36,10 +36,10 @@ export default {
 .scroll-btn {
 //   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   background-color: #F9AA01;
-  color: white;
+  color: black;
   padding: 20px;
   border-radius: 50%;
   cursor: pointer;
