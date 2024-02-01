@@ -205,17 +205,17 @@ export default {
         }
         
     }
-    .up{
-        position: fixed;
-        background-color: rgb(208, 159, 24);
-        display: inline;
-        padding: 25px;
-        bottom: 10px;
-        right: 10px;
-        text-decoration: none;
+    // .up{
+    //     position: fixed;
+    //     background-color: rgb(208, 159, 24);
+    //     display: inline;
+    //     padding: 25px;
+    //     bottom: 10px;
+    //     right: 10px;
+    //     text-decoration: none;
         
 
-    }
+    // }
     
 }
 </style>
