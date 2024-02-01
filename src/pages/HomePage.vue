@@ -51,14 +51,14 @@ export default {
                 },
                 {
                     img : 'cms-banner-02.jpg',
-                    name:'Assasin s Creed Unity Game',
+                    name:'Assasin’s Creed Unity Game',
                     tag:'Latest Game'
                 }     
             ],
             discountImg:[
                 {
                     img : 'cms-banner-03.jpg',
-                    name:'Dragon s Dogma Video Game',
+                    name:'Dragon’s Dogma Video Game',
                     tag:'20% Discount'
                 },
                 {
@@ -272,13 +272,13 @@ export default {
             <div class="col-12 mb-3">
                 <nav>
                     <ul>
-                        <li>
+                        <li class="hover-li">
                             Featured
                         </li>
-                        <li>
+                        <li class="hover-li">
                             New Arrival
                         </li>
-                        <li>
+                        <li class="hover-li">
                             Best Seller
                         </li>
                     </ul>
@@ -529,6 +529,9 @@ export default {
     }
     span{
         font-size: 12px;
+    }
+    .hover-li:hover{    
+        color: #F9AA01;
     }
     .card{
         position: relative;

@@ -19,51 +19,55 @@
                 {
                     img : '04.jpg',
                     imgHover:'01.jpg',
-                    title:'controller',
+                    title:'Shopping Mahjong connect',
                     star:5,
                     price:'$ 60',
-                    priceUnderline:'$50'
+                    priceUnderline:'$50',
+                    discount:'-44%'
                 },
                 {
                     img : '02.jpg',
                     imgHover:'04.jpg',
-                    title:'controller',
-                    star:5,
-                    price:'$ 60',
+                    title:'Taishou X Alice Epilogue',
+                    star:2,
+                    price:'$ 100 - 120',
                     priceUnderline:'$50'
                 },
                 {
                     img : '05.jpg',
                     imgHover:'07.jpg',
-                    title:'controller',
-                    star:5,
-                    price:'$ 60',
-                    priceUnderline:'$50'
+                    title:'Labyrinths of the World',
+                    star:3,
+                    price:'$ 80',
+                    priceUnderline:'$50',
+                    discount:'-24%'
                 },
                 {
                     img : '09.jpg',
                     imgHover:'08.jpg',
-                    title:'controller',
-                    star:4,
-                    price:'$ 60',
-                    priceUnderline:'$50'
+                    title:'Reginald’s Death Arena',
+                    star:1,
+                    price:'$ 92',
+                    priceUnderline:'$110'
                 
                 },
                 {
                     img : '10.jpg',
                     imgHover:'11.jpg',
-                    title:'controller',
+                    title:'Martin Goes on the Attack',
                     star: 4 ,
-                    price:'$ 60',
-                    priceUnderline:'$50'
+                    price:'$610',
+                    priceUnderline:'$710',
+                    discount:'-15%'
                 },
                 {
                     img : '08.jpg',
                     imgHover:'02.jpg',
                     title:'Type',
                     star: 2 ,
-                    price:'$ 70',
-                    priceUnderline:'$50'
+                    price:'$ 100',
+                    priceUnderline:'$50',
+                    discount:'-50%'
                 },
                 {
                     img : '04.jpg',
@@ -154,7 +158,7 @@
         <div class="info-product product-info position-absolute bottom-0 start-0">
             <div>
                 <i  v-for="(ele,i) in elem.star" :key="i" class="fa-solid fa-star color-span"></i>
-                <i v-for="(ele,i) in (5 - elem.star)" :key="i" class="fa-regular fa-star text-white"></i>
+                <i v-for="(ele,i) in (5 - elem.star)" :key="i" class="fa-solid fa-star text-white"></i>
             </div>
             <h4 class="text-white">
                 {{elem.title}}
@@ -163,10 +167,13 @@
                 <span class="text-decoration-line-through fs-2 text-white">
                     {{elem.priceUnderline}}
                 </span>  
-                <span class=" color-span fs-2"> 
+                <span class=" color-span fs-2 ms-2"> 
                     {{elem.price}}
                 </span>
             </div>
+        </div>
+        <div class=" position-absolute top-0 start-0 polygon">
+            {{ elem.discount }}
         </div>
     </swiper-slide>
   </swiper>
@@ -177,7 +184,7 @@
     width: calc(100% / 4);
     .img-product{
         width: 100%;
-        height: 200px;
+        height: 250px;
         
         img{
             width: 100px;
@@ -201,6 +208,12 @@
      }
      .color-span{
         color: #F9AA01;
+    }
+    .polygon{
+        margin: 3px;
+        clip-path: polygon(6% 1%, 100% 0%, 96% 100%, 0% 100%);
+        color: black;
+        background-color: #F9AA01;
     }
 }
 </style>
