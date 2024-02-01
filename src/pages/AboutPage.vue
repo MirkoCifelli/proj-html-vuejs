@@ -234,7 +234,7 @@ export default {
 
                 <div class="row text-white d-flex text-center ">
                     <!-- oarte nuova -->
-                    <div class="col-4 mb-4" v-for="(elem, i) in codezeel" :key="i">
+                    <div class="col-4 mb-4 d-flex flex-column align-items-center" v-for="(elem, i) in codezeel" :key="i">
                         <div class="background-orange">
                             <i :class="elem.iconClass"></i>
                         </div>
@@ -391,7 +391,6 @@ export default {
         height: 70px;
         border-radius: 50%;
         line-height: 4.2;
-        transform: translate(190px);
         transition: 0.5s;
         }
 
