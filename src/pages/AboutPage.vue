@@ -34,6 +34,12 @@ export default {
                     description:"Enjoy a comprehensive collection of WordPress 101 video tutorials on our membership training area.",
                 },
             ],
+            socialIconTeamMember: [
+                'fa-brands fa-facebook fa-beat-fade fa-xl',
+                'fa-brands fa-twitter fa-beat-fade fa-xl',
+                'fa-brands fa-youtube fa-beat-fade fa-xl',
+                'fa-brands fa-linkedin fa-beat-fade fa-xl'
+            ],
 
             chooseUs: [
             {
@@ -271,7 +277,12 @@ export default {
                 <div class="shortbar-section-two"></div>
                 <div class="row text-white carousel_container">
                     <div v-for="(member, i) in teamMember" :key="i" class="col-3">
-                        <div class="w-100">
+                        <div class="w-100 position-relative ">
+                            <ul class="list-unstyled text-black position-absolute ul-icon-team-member ">
+                                <li v-for="(socialIcon, i) in socialIconTeamMember" :key="i" class="ul-icon-team-member mt-2 p-1">
+                                    <i :class="socialIcon" class="orange-li"></i>
+                                </li>
+                            </ul>
                             <img class="mb-2 w-100 " :src="member.image" alt="">
                         </div>
                         <div>
@@ -443,6 +454,20 @@ export default {
     p{
         color: rgb(135, 135, 135);
     }
+}
+// SECTION 5
+.w-100{
+    ul{
+    opacity: 0;
+    &.ul-icon-team-member:hover{
+        
+        opacity: 1;
+
+    }
+    .orange-li:hover{
+        color: rgb(250, 171, 0);
+    }
+}
 }
 
 

@@ -152,8 +152,8 @@
   >
     <swiper-slide class="product position-relative" v-for="(elem, i) in slide" :key="i">
         <div class="img-product">
-            <img class="Sirv image-main" :src="getImagePath('../assets/'+ elem.img)" alt="">
-            <img class="Sirv image-hover" :src="getImagePath('../assets/'+ elem.imgHover)" alt="">
+            <img class=" image-main" :src="getImagePath('../assets/'+ elem.img)" alt="">
+            <img class="image-hover" :src="getImagePath('../assets/'+ elem.imgHover)" alt="">
         </div>
         <div class="info-product product-info position-absolute bottom-0 start-0">
             <div>
@@ -192,7 +192,7 @@
             object-fit: cover;
         }
     }
-    .img-product img.Sirv.image-hover{
+    .img-product img.image-hover{
         position: absolute;
         top: 0;
         right: 0;
@@ -203,7 +203,7 @@
         transition: opacity .2s;
         
     }
-    .img-product:hover img.Sirv.image-hover {
+    .img-product:hover img.image-hover {
         opacity: 1;
      }
      .color-span{
