@@ -284,103 +284,8 @@ export default {
                     </ul>
                 </nav>
             </div>
-            <div class="col-3">
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img  class="Sirv image-main" src="../assets/02.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">   
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Shopping Mahjoung
-                            </div>
-                            <div>
-                                <span class="text-decoration-line-through fs-2">% 30.00</span>  <span class=" color-span fs-2"> $100.00</span>
-                            </div> 
-                        </div>  
-                    </div>
-                    <div class="discount-product fs-4 bg-discout">
-                            -44%
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img  class="Sirv image-main" src="../assets/09.jpg" alt="">
-                        <img  class="Sirv image-hover" src="../assets/01.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Buddy and Lucky Solitaire
-                            </div>
-                            <div>
-                             <span class=" color-span fs-2"> $83.00 - 90.00 </span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img class="Sirv image-main" src="../assets/10.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Taushou X Alice Epilogue
-                            </div>
-                            <div>
-                             <span class=" color-span fs-2"> $160.00 </span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img class="Sirv image-main" src="../assets/11.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Labyrinths of the World
-                            </div>
-                            <div>
-                             <span class=" color-span fs-2"> $110.00 </span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
+            <div class="col-12">
+                <SwiperComponent class="margin-special"/>  
             </div>
         </div>
 
@@ -425,125 +330,12 @@ export default {
                 </nav>
             </div>
 
-            <div class="col-3">
-                <!-- <div class="card">
-                    <img src="../assets/04.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
-                        </div>
-                        
-                    </div>
-                </div> -->
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img class="Sirv image-main" src="../assets/04.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Shopping Mahjoung
-                            </div>
-                            <div>
-                                <span class="text-decoration-line-through fs-2">% 30.00</span>  <span class=" color-span fs-2"> $50.00</span>
-                            </div> 
-                        </div>  
-                    </div>
-                    <div class="discount-product fs-4 bg-discout">
-                            -44%
-                    </div>
-                </div>
+            <div class="col-12">
+                <SwiperComponent class="margin-special"/>  
             </div>
-            <div class="col-3">
-                <!-- <div class="card">
-                    <img src="../assets/04.jpg" alt="">
-                    <div class="special-category-info ">
-                        <div class="card-div">
-                            Batman
-                        </div>
-                        
-                    </div>
-                </div> -->
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img  class="Sirv image-main" src="../assets/02.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/01.jpg"  alt="">   
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Shopping Mah
-                            </div>
-                            <div>
-                                 <span class=" color-span fs-2"> $56.00</span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                
-
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img class="Sirv image-main" src="../assets/01.jpg" alt="">
-                        
-                         <img class="Sirv image-hover" src="../assets/06.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                BangBangShooting
-                            </div>
-                            <div>
-                                 <span class=" color-span fs-2"> $56.00 - $90.00</span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="product position-relative">
-                    <div class="product-img position-relative">
-                        <img class="Sirv image-main" src="../assets/05.jpg" alt="">
-                        <img class="Sirv image-hover" src="../assets/07.jpg"  alt="">
-                        
-                    </div>
-                    <div class="product-info position-absolute bottom-0 start-0">
-                        <div class="product-div">
-                            <div class="fs-4">
-                                <!-- <i  v-for="(i) in Vote" :key="i" class="fa-solid fa-star"></i>
-                                <i v-for="(i) in (5 - Vote)" :key="i" class="fa-regular fa-star"></i> -->
-                                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="fs-3">
-                                Taishou x Alice Epilogue
-                            </div>
-                            <div>
-                                 <span class=" color-span fs-2">$160.00</span>
-                            </div> 
-                        </div>  
-                    </div>
-                </div>
-            </div>
+            
+            
+            
 
         </div>
     </div>
@@ -644,14 +436,14 @@ export default {
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-12">
                 <SwiperComponent class="margin-special"/>
             </div>
         </div>
         
-    </div>
+    </div> -->
 </template>
 
 <style lang="scss" scoped>
