@@ -5,6 +5,7 @@ import AppFooter from './components/AppFooter.vue';
 import axios from 'axios';
 import ScrollButton from './components/ScrollButton.vue';
 
+
 export default {
     data() {
         return {
@@ -21,9 +22,9 @@ export default {
 
     },
     mounted(){
-        axios.get('').then((response)=>{
-            console.log(response)
-        });
+        // axios.get('').then((response)=>{
+        //     console.log(response)
+        // });
     }
 }
 </script>

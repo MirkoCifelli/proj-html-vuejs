@@ -1,4 +1,5 @@
 <script>
+import SwiperComponent from '../components/SwiperComponent.vue';
 
 export default {
     data() {
@@ -122,6 +123,9 @@ export default {
         }
       }, 1000);
     }
+  },
+  components:{
+    SwiperComponent
   }
     
 }
@@ -640,7 +644,14 @@ export default {
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <SwiperComponent class="margin-special"/>
+            </div>
+        </div>
+        
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -884,6 +895,9 @@ export default {
     }
     
 }
+// .margin-special{
+//     padding-right: 400px;
+// }
     
 
 </style>
