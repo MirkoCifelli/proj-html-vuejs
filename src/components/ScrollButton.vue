@@ -40,7 +40,7 @@ export default {
   right: 40px;
   background-color: #F9AA01;
   color: black;
-  padding: 20px;
+  padding: 15px;
   border-radius: 0%;
   transform:  rotate(45deg);
   cursor: pointer;
