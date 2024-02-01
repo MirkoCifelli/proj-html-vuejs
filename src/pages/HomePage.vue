@@ -1,5 +1,6 @@
 <script>
 import SwiperComponent from '../components/SwiperComponent.vue';
+import SwiperComponentStaff from '../components/SwiperComponentStaff.vue';
 
 export default {
     data() {
@@ -125,7 +126,8 @@ export default {
     }
   },
   components:{
-    SwiperComponent
+    SwiperComponent,
+    SwiperComponentStaff
   }
     
 }
@@ -344,7 +346,7 @@ export default {
     <div class="container-fluid pb-3 ">
         <div class="img-container-staff">
             <!-- <img src="../assets/parallax.jpg" alt=""> -->
-            <div class="container d-flex flex-wrap justify-content-center p-5">
+            <!-- <div class="container d-flex flex-wrap justify-content-center p-5">
                 <div class="img-staff position-relative">
                     <img src="../assets/t5-1-100x100_left.jpg" alt="">
                 </div>
@@ -362,7 +364,11 @@ export default {
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-            </div>
+            </div> -->
+
+            
+            <SwiperComponentStaff/>
+            
         </div>
     </div>
     <!-- New game blogs -->
@@ -443,6 +449,13 @@ export default {
             </div>
         </div>
         
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <SwiperComponentStaff/>
+            </div>
+        </div>
     </div> -->
 </template>
 
@@ -690,9 +703,7 @@ export default {
     }
     
 }
-// .margin-special{
-//     padding-right: 400px;
-// }
+
     
 
 </style>

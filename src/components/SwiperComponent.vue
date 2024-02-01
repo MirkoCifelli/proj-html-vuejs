@@ -180,8 +180,9 @@
 </template>
 
 <style lang="scss" scoped>
+
 .product{
-    width: calc(100% / 4);
+    width: calc( 100% / 4);
     .img-product{
         width: 100%;
         height: 250px;
